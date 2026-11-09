@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#040914">
+  <meta name="description" content="Flashcard revision for Microbiology, Biochemistry, and Cell &amp; Molecular Biology.">
+  <title>Courses | Lock In</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/app.js" defer></script>
+  <noscript><style>.intro { display: none; }</style></noscript>
+</head>
+<body>
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro-title">
+      <span class="intro-word"><span style="--i:0">L</span><span style="--i:1">O</span><span style="--i:2">C</span><span style="--i:3">K</span></span>
+      <span class="intro-word"><span style="--i:4">I</span><span style="--i:5">N</span></span>
+      <span class="intro-word"><span style="--i:6">Y</span><span style="--i:7">O</span><span style="--i:8">U</span></span>
+      <span class="intro-word"><span style="--i:9">C</span><span style="--i:10">O</span><span style="--i:11">W</span></span>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#/" id="skip-link">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#/" aria-label="Lock In home">
+        <span class="brand-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M8 10V7a4 4 0 1 1 8 0v3M7 10h10a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2Zm5 4v2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span>Lock In</span>
+      </a>
+      <nav aria-label="Main"><a class="header-link" href="#/" id="courses-link">Courses</a></nav>
+    </div>
+  </header>
+
+  <p class="shell storage-note" id="storage-note" role="status" hidden>Browser storage is unavailable. New marks and sessions may be lost when you close this page.</p>
+  <main class="shell page" id="app" tabindex="-1">
+    <p id="loading" role="status">Loading courses…</p>
+    <noscript><style>#loading { display: none; }</style><p>Enable JavaScript to use the flashcards.</p></noscript>
+  </main>
+
+  <template id="art-microbiology">
+    <svg class="cover-art" viewBox="0 0 360 180" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M75 80v15c0 36 47 61 105 61s105-25 105-61V80" fill="currentColor" fill-opacity=".035" opacity=".47"/>
+        <ellipse cx="180" cy="80" rx="105" ry="60" fill="currentColor" fill-opacity=".045" stroke-width="1.4" opacity=".8"/>
+        <ellipse cx="180" cy="80" rx="94" ry="51" opacity=".4"/>
+        <path d="M97 106c17 20 48 34 83 34s66-14 83-34" opacity=".35"/>
+        <path d="M85 73c5-19 24-34 47-41m96 0c23 7 42 22 47 41" opacity=".24"/>
+        <g fill="currentColor" fill-opacity=".23" opacity=".88">
+          <circle cx="142" cy="62" r="9"/><circle cx="129" cy="78" r="4"/><circle cx="153" cy="79" r="3"/>
+          <circle cx="202" cy="101" r="11"/><circle cx="217" cy="113" r="4"/><circle cx="186" cy="113" r="4"/>
+          <circle cx="229" cy="62" r="7"/><circle cx="242" cy="73" r="3"/><circle cx="222" cy="74" r="2"/>
+          <circle cx="123" cy="99" r="2"/><circle cx="175" cy="62" r="3"/><circle cx="258" cy="91" r="3"/>
+        </g>
+        <g fill="currentColor" fill-opacity=".12" stroke-width="1.3">
+          <rect x="181" y="46" width="25" height="8" rx="4" transform="rotate(24 193 50)"/>
+          <rect x="151" y="99" width="24" height="8" rx="4" transform="rotate(-30 163 103)"/>
+          <rect x="224" y="89" width="23" height="8" rx="4" transform="rotate(19 236 93)"/>
+          <rect x="170" y="78" width="19" height="7" rx="3.5" transform="rotate(34 180 82)"/>
+        </g>
+        <path d="M116 58h5m-2.5-2.5v5m82 10h5m-2.5-2.5v5m-63 31h5m-2.5-2.5v5m95-7h5m-2.5-2.5v5" opacity=".42"/>
+      </g>
+    </svg>
+  </template>
+
+  <template id="art-biochemistry">
+    <svg class="cover-art" viewBox="0 0 360 180" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="rotate(-31 138 90)">
+          <path d="M55 64c39 0 41 52 80 52s41-52 80-52M55 116c39 0 41-52 80-52s41 52 80 52" stroke-width="2"/>
+          <path d="M57 65v50m12-46v42m12-34v26m27-25v24m12-33v42m15-46v50m15-46v42m12-33v24m27-26v28m12-36v44m12-48v52" stroke-width="1.2" opacity=".53"/>
+          <path d="M50 90h170" stroke-dasharray="1 6" opacity=".28"/>
+        </g>
+        <g transform="translate(258 91)">
+          <path d="M0-34 29.4-17v34L0 34l-29.4-17v-34Z" fill="currentColor" fill-opacity=".07" stroke-width="1.7"/>
+          <circle r="18" stroke-width="1.25" opacity=".7"/>
+          <path d="M0-34v-14m29.4 65 13 7m-71.8-7-13 7" opacity=".55"/>
+          <g fill="currentColor" stroke="none">
+            <circle cy="-50" r="2.7"/><circle cx="44" cy="25" r="2.7"/><circle cx="-44" cy="25" r="2.7"/>
+          </g>
+        </g>
+        <path d="M223 37h11m-5.5-5.5v11m-12 99h10m-5-5v10M78 46h8m-4-4v8m223 11h8m-4-4v8" opacity=".38"/>
+        <path d="M210 132h82m-82 5h45" stroke-dasharray="1 5" opacity=".25"/>
+      </g>
+    </svg>
+  </template>
+
+  <template id="art-cell-molecular-biology">
+    <svg class="cover-art" viewBox="0 0 360 180" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M88 75c13-30 41-50 81-55 27-3 56 5 81 19 29 17 45 47 29 73-15 25-48 26-75 36-30 11-74 16-100-3-22-16-29-44-16-70Z" fill="currentColor" fill-opacity=".06" stroke-width="1.6" opacity=".8"/>
+        <path d="M96 77c12-28 39-46 74-50 26-3 54 5 76 19 24 15 38 39 25 61-14 23-44 25-70 34-28 10-69 15-92-2-20-15-25-40-13-62Z" opacity=".29"/>
+        <path d="M196 74c7 16-2 37-20 43-18 6-38-2-43-18-7-18 4-39 22-44 16-5 34 3 41 19Z" fill="currentColor" fill-opacity=".13" stroke-width="1.5"/>
+        <path d="M190 77c5 13-2 29-16 34s-30-1-35-14c-5-14 4-30 18-35 13-4 27 2 33 15Z" opacity=".42"/>
+        <circle cx="165" cy="86" r="10" fill="currentColor" fill-opacity=".2" opacity=".85"/>
+        <g stroke-width="1.6" opacity=".82">
+          <path d="M184 48c18 1 30 11 36 21m-30-26c17 0 34 8 42 23m-32-28c16 1 32 6 42 18m-37 48c12-4 20-11 23-21m-24 30c16-5 29-16 33-29m-32 37c21-5 35-18 40-33"/>
+          <path d="M107 112c2-9 12-11 18-4 5 5 4 13 12 16 6 2 4 11-2 13-10 3-30-10-28-25Z" fill="currentColor" fill-opacity=".12"/>
+          <path d="M112 113c4-6 8 2 5 6s4 8 7 4 6 1 4 7m100-55c9-4 13-11 22-10 7 1 10 10 5 15-6 7-16 3-24 6-6 2-9-8-3-11Zm3 6c3-7 6 3 11-2 3-4 1-8 6-8 4 0 3 6 5 6"/>
+        </g>
+        <g fill="currentColor" stroke="none" opacity=".62">
+          <circle cx="115" cy="78" r="2"/><circle cx="130" cy="67" r="1.6"/><circle cx="120" cy="87" r="2"/>
+          <circle cx="145" cy="130" r="1.7"/><circle cx="158" cy="134" r="2.2"/><circle cx="189" cy="131" r="1.8"/>
+          <circle cx="212" cy="51" r="1.4"/><circle cx="218" cy="57" r="1.4"/><circle cx="224" cy="52" r="1.4"/>
+          <circle cx="223" cy="104" r="1.6"/><circle cx="233" cy="111" r="1.6"/><circle cx="256" cy="104" r="2"/>
+        </g>
+      </g>
+    </svg>
+  </template>
+</body>
+</html>
